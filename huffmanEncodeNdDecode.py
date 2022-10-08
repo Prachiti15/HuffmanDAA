@@ -63,8 +63,6 @@ for i in range(0, len(letters)):
         occur.append(letters[i])
     else:
         alpha.append(letters[i])
-# print(occur)
-# print(alpha)
 Tnodes = []
 for x in range(len(alpha)):
     heapq.heappush(Tnodes, node(occur[x], alpha[x]))
@@ -80,15 +78,9 @@ print("Table for encoded letters:")
 printNodes(Tnodes[0])
 print("\n")
 endict = new
-# print(endict)
-# print(type(new))
-# key=endict.keys()
-# print(key)
-# print(endict.has_key(key))
 print("Encoded Message:")
 encodeMsg(str1, endict)
 print("\n")
-# print(fk)
 print("Decoded Message: ")
 decodeMsg(new, fk)
 print("\n")
